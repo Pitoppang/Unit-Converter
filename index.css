@@ -1,0 +1,67 @@
+/* 1 - The challenge asked to follow the design pallete through Figma (DONE). */
+
+body {
+    max-width: 550px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto; /* O "auto" alinha no centro!!!! */
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-weight: initial;  
+    text-shadow: 1px 1px 2px #3D3D3D;
+}
+
+#input_section {
+    /* Ver como corrigir a cor não pegar no topo... "padding" é mesmo a solução? */
+    padding: 1px 0px 30px 0px;
+    background-color: #6943FF;
+}
+
+#input_el {
+    height: 83px;
+    width: 117px;
+    border: 1px solid #B295FF;
+    border-radius: 5px;
+    background: none;
+    text-align: center;
+    color: white;
+}
+
+#button_el {
+    /* porque o "width" dos dois elementos não é o mesmo? */
+    height: 42px;
+    width: 117px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #FFFF;
+    color: 3D3D3D;
+    box-shadow: 1px 1px;
+}
+
+h2 {
+    font-weight: normal;
+    padding: 15px;  
+}
+
+
+#results_section {
+    padding: 2px 10px 20px 10px;
+    background-color: #1F2937;
+}
+
+.results_box {
+    width: 500px;
+    height: 108px;
+    border-radius: 5px;
+    background-color: #273549;
+    margin: 0 auto;
+}
+
+/* Eu ia centralizar o texto do h2 só e deixar ele redimensionar dentro do container, quando o input viesse mas como eu precisava ser breve e o código começou a bugar, quando tentei implementar isso nos retoques finais, achei melhor deixar quieto e da forma que montei inicialmente. */
+p {
+    color: #B295FF;
+    line-height: 5px;
+}

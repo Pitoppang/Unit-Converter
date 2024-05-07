@@ -1,0 +1,56 @@
+Initial JS code to check if my logic is right.
+
+
+/*
+1 meter = 3.281 feet
+1 liter = 0.264 gallon
+1 kilogram = 2.204 pound
+*/
+
+let inputEl = document.getElementById("input_el")
+const buttonEl = document.getElementById("button_el")
+// inputEl.innerHTML
+
+buttonEl.addEventListener("click", function(){
+    // 2 - The challenge asked to generate all the conversions at once, on click (  ).
+    
+    toLength()
+    //function 2
+    //function 3
+    
+    // let logOut = inputEl.value
+    // console.log(logOut)
+})
+
+function toLength () {
+    const feetValue = 3.281
+    // 3 - The challenge asked to round the numbers down to 3 decimal places (DONE).
+    let convertLength = (inputEl.value * feetValue).toFixed(3)
+    let text = `${inputEl.value} meters = ${convertLength} feet!`
+    console.log(text)
+}
+
+
+
+Para as outras funções, eu só repeti, exemplo abaixo (já com a inclusão da outra conversão):
+function toVolume () {
+    const gallonValue = 0.264
+    // 3 - The challenge asked to round the numbers down to 3 decimal places (DONE).
+    let volOne = (inputEl.value * gallonValue).toFixed(3)
+    let volTwo = (inputEl.value / gallonValue).toFixed(3)
+    let text2 = `${inputEl.value} liters = ${volOne} gallons! | ${inputEl.value} gallons = ${volTwo} litters!`
+    console.log(text2)
+}
+
+
+Eu vou tentar implementar outra forma de fazer isso, uma mais direta, conforme eu for montando o código. Eu estou montando a lógica passo-a-passo pra depois "espremer" o código. Something like that:
+
+
+
+buttonEl.addEventListener("click", function(){
+    // 2 - The challenge asked to generate all the conversions at once, on click (  ).
+    
+    console.log(`${inputEl.value} meters = ${inputEl.value * 3.281} feet! | ${inputEl.value} feet = ${inputEl.value / 3.281} meters!` )
+    toVolume()
+    toMass()
+})
